@@ -1,7 +1,7 @@
 var operand1;
 var operand2;
 
-function getNumbes(){
+function getNumbers(){
   operand1 = Math.floor(Math.random() * 50) +1;
   operand2 = Math.floor(Math.random() * 50) +1;
   document.getElementById("operand1").innerHTML = operand1;
