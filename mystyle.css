@@ -19,6 +19,13 @@ img(
 	height:150px;
 )
 		
+#gallery{
+	width:265px;
+	height:250px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:25px;
+}
 #flashCards{
 	font-family: fantasy;
 	font-size: 24px;
