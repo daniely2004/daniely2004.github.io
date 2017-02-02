@@ -19,5 +19,3 @@ function checkAnswer(){
     document.getElementById("results").innerHTML= "Wrong!";
   }
 }
-
-
