@@ -5,7 +5,7 @@
 	float:left;
 	text-align:center;
 	line-height:100px;
-	vertical-allign:middle;
+	vertical-align:middle;
 	background-color:white;
 }
 
@@ -26,101 +26,27 @@
 	padding:50px;
 	margin-left:auto;
 	margin-right:auto;
-	background-color:orange;
+	border-radius:25px;
+	background-color:red;
 	margin-bottom:25px;
+	
 }
-
-
 
 body{
-	background-color:blueviolet;
+	background-color:skyblue;
 	text-align:center;
 }
-			
+
 #container{
-	background-color:greenyellow;
+	background-color:orange;
 	margin:50px;
 	border-radius:25px;
 	padding:10px;
-}
-#greeting{
-	
-}
+}	
 #content{
-
-}
-img(
-	height:150px;
-)
-
-
-
-#gallery{
-	width:300px;
-	margin-left:auto;
-	margin-right:auto;
-	height:300px;
-	margin-top:25px;
+	color:red;
 }
 
-#left{
-	float:left;
+img{
+	height:250px;
 }
-#right{
-	float:left;
-}
-#middle{
-	float:left;
-}
-
-img { 
-		height:100px;
-}
-#flashCards{
-	font-family: fantasy;
-	font-size: 24px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-	line-height: 26.4px;
-	color: blue;
-	text-align: center;
-}
-#flashCards2{
-	font-family: fantasy;
-	font-size: 24px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-	line-height: 26.4px;
-	color: blue;
-	text-align: center;
-}
-#flashCards3{
-	font-family: fantasy;
-	font-size: 24px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-	line-height: 26.4px;
-	color: blue;
-	text-align: center;
-}
-#flashCards4{
-	font-family: fantasy;
-	font-size: 24px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-	line-height: 26.4px;
-	color: blue;
-	text-align: center;
-}
-#addpages{
-	 font-family: "Times New Roman", Times, serif;
-   height: 200px;
-   width: 50%;
-   background-color: powderblue;
-	 text-align: justify;
-	 text-decoration: underline;
-	 color:#00FF00;
