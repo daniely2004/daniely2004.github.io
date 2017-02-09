@@ -1,3 +1,33 @@
+var character = ""
+
+function chooseX(){
+  character = 'x';
+}
+
+function choose0(){
+  character = '0'
+}
+
+function makeMove(divLoction){
+  var insideDiv = document.getElementById(divLoction).innerHTML;
+  
+  if(insideDiv === ""){
+    document.getElementById(divLoction).innerHTML=character
+    document.getElementById("notes").innerHTML=";"
+  }
+  else{
+    document.getElementById("notes").innerHTML="Already made a move here" +
+      "<p>Try another spot!</p>"
+  }
+  
+  if(checkWinner()){
+    document.getElementById("notes").innerHTML=character +" wins!";
+  }
+}
+
+
+
+
 var operand1;
 var operand2;
 
