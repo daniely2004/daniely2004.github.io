@@ -1,23 +1,23 @@
-var character = ""
+var character = "";
 
 function chooseX(){
   character = 'x';
 }
 
-function choose0(){
-  character = '0'
+function chooseO(){
+  character = 'O';
 }
 
-function makeMove(divLoction){
-  var insideDiv = document.getElementById(divLoction).innerHTML;
+function makeMove(divLocation){
+  var insideDiv = document.getElementById(divLocation).innerHTML;
   
   if(insideDiv === ""){
-    document.getElementById(divLoction).innerHTML=character
+    document.getElementById(divLocation).innerHTML=character;
     document.getElementById("notes").innerHTML=";"
   }
   else{
     document.getElementById("notes").innerHTML="Already made a move here" +
-      "<p>Try another spot!</p>"
+      "<p>Try another spot!</p>";
   }
   
   if(checkWinner()){
