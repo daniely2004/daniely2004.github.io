@@ -1,3 +1,37 @@
+.box{
+	border-style:solid;
+	width:100px;
+	height:100px;
+	float:left;
+	text-align:center;
+	line-height:100px;
+	vertical-allign:middle;
+	background-color:white;
+}
+
+#players{
+	float:left;
+}
+
+#board{
+	float:right;
+	width:350px;
+	height:350px;
+}
+
+#game{
+	border-style:solid;
+	width:600px;
+	height:400px;
+	padding:50px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:orange;
+	margin-bottom:25px;
+}
+
+
+
 body{
 	background-color:blueviolet;
 	text-align:center;
@@ -22,18 +56,25 @@ img(
 
 
 #gallery{
-	width:265px;
-	height:250px;
+	width:300px;
 	margin-left:auto;
 	margin-right:auto;
+	height:300px;
 	margin-top:25px;
-	font-family: fantasy;
-	font-size: 24px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-	color: green;
-	text-align: centerter;
+}
+
+#left{
+	float:left;
+}
+#right{
+	float:left;
+}
+#middle{
+	float:left;
+}
+
+img { 
+		height:100px;
 }
 #flashCards{
 	font-family: fantasy;

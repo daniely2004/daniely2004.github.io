@@ -1,0 +1,43 @@
+<html>
+  <head>
+     <title>Projects</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <script src="myscript.js"></script>
+  </head>
+  <body>
+    <div id= "container">
+	    <p id="navigation">
+		  <a href="index.html"> Home </a> |
+		  <a href="aboutme.html">About Me</a> |
+      <a href="projects.html">Projects</a>
+      </p>
+      <div>
+       <div id="game">
+        <div id="players">
+          <input type="button" value="X" onclick="chooseX()" />
+          <input type="button" value="O" onclick="chooseO()" />
+          <p id="notes">
+            press 'X' or 'O' above to play!
+          </p>
+        </div>
+        <div id="board">
+          <div>  
+            <div class="box" id="row1col1" onclick="makeMpve('rowlcol1')"></div>
+            <div class="box" id="row1col2" onclick="makeMpve('rowlcol2')"></div>
+            <div class="box" id="row1col3" onclick="makeMpve('rowlcol3')"></div>
+          </div>
+          <div>  
+            <div class="box" id="row2col1" onclick="makeMpve('row2col1')"></div>
+            <div class="box" id="row2col2" onclick="makeMpve('row2col2')"></div>
+            <div class="box" id="row2col3" onclick="makeMpve('row2col3')"></div>
+         </div>
+         <div>  
+            <div class="box" id="row3col1" onclick="makeMpve('row3col1')"></div>
+            <div class="box" id="row3col2" onclick="makeMpve('row3col2')"></div>
+            <div class="box" id="row3col3" onclick="makeMpve('row3col3')"></div>
+          </div>
+         </div>
+      </div>
+    </div>
+  </body>
+</html>
