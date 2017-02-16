@@ -13,7 +13,7 @@ function makeMove(divLocation){
   
   if(insideDiv === ""){
     document.getElementById(divLocation).innerHTML=character;
-    document.getElementById("notes").innerHTML=";"
+    document.getElementById("notes").innerHTML="";
   }
   else{
     document.getElementById("notes").innerHTML="Already made a move here" +
