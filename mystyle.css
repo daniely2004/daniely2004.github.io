@@ -39,7 +39,7 @@ body{
 
 #container{
 	background-color:orange;
-	margin:50px;
+	margin:0px;
 	border-radius:25px;
 	padding:10px;
 }
@@ -48,6 +48,26 @@ body{
 	color:red;
 }
 
-img{
+#gallery img{
 	height:250px;
+}
+
+#line{
+	margin-top:50px;
+}
+
+#line img{
+	width:50px;
+}
+
+#hangmanPic{
+	margin-top:50px;
+}
+
+#hangmanButtons input[type="button"]{
+	 color:red;
+   font:2.4em Futura, ‘Century Gothic’, AppleGothic, sans-serif;
+   font-size:70%;
+   cursor:pointer;
+	 background-color:green 
 }
