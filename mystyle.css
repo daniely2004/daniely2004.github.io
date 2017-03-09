@@ -66,8 +66,8 @@ body{
 
 #hangmanButtons input[type="button"]{
 	 color:red;
-   font:2.4em Futura, ‘Century Gothic’, AppleGothic, sans-serif;
-   font-size:70%;
+   font:4.4em Futura, ‘Century Gothic’, AppleGothic, sans-serif;
+   font-size:100%;
    cursor:pointer;
-	 background-color:green 
+	 background-color:green;
 }
