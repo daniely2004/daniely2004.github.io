@@ -2,7 +2,7 @@
   <head>
     <title>hangman</title>
     <link rel="stylesheet" type="text/css" href="mystyle.css">
-    <script src="myscript.js"></script>
+    <script src="hangman.js"></script>
   </head>
   <body>
     <div id= "container">
@@ -17,8 +17,8 @@
 					<div id="hangmanButtons">
 							<input type="button" value="New Game" onclick="NewGame()">
 						<p>
-							<input type="button" id="a" value="a" onclick="choose('a')">
-							<input type="button" id="b" value="b" onclick="choose('b')">
+							<input type="button" id="a" value="a" onclick="guess('a')">
+							<input type="button" id="b" value="b" onclick="guess('b')">
 							<input type="button" id="c" value="c" onclick="guess('c')">
 							<input type="button" id="d" value="d" onclick="guess('d')">
 						  <input type="button" id="e" value="e" onclick="guess('e')">
@@ -41,10 +41,10 @@
 							<input type="button" id="t" value="t" onclick="guess('t')">
 							<input type="button" id="u" value="u" onclick="guess('u')">
 							<input type="button" id="v" value="v" onclick="guess('v')">
-							<input type="button" id="w" value="w" onclick="choose('w')">
-							<input type="button" id="x" value="x" onclick="choose('x')">
-							<input type="button" id="y" value="y" onclick="choose('y')">
-							<input type="button" id="z" value="z" onclick="choose('z')">
+							<input type="button" id="w" value="w" onclick="guess('w')">
+							<input type="button" id="x" value="x" onclick="guess('x')">
+							<input type="button" id="y" value="y" onclick="guess('y')">
+							<input type="button" id="z" value="z" onclick="guess('z')">
 						</p>
 						<div id="hangmanPic">
 							<img src="images/hangmanSlim.png" />
