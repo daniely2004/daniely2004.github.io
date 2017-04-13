@@ -33,7 +33,7 @@
 }
 
 body{
-	background-color:skyblue;
+	 background-image: url("https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_tahoe.jpeg");
 	text-align:center;
 }
 
@@ -45,7 +45,7 @@ body{
 }
 
 #content{
-	color:red;
+	color: red;
 }
 
 #gallery img{
@@ -65,9 +65,9 @@ body{
 }
 
 #hangmanButtons input[type="button"]{
-	 color:red;
+	 color:orange;
    font:4.4em Futura, ‘Century Gothic’, AppleGothic, sans-serif;
    font-size:100%;
    cursor:pointer;
-	 background-color:green;
+	 background-color:yellow;
 }

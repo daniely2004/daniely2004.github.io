@@ -1,25 +1,12 @@
+var word = "";
+
 function startGame(){
   pickWord();
-}
-
-function guess(Alphabet){
-  alert(Alphabet);
-}
-
-function pickWord(){
   
-  var word = "supercalifornia";
-  
-  for(var i = 0; i<word.length; i++){
-    
-    var lineHTML = document.getElementById("line").innerHTML;
-    
-    document.getElementById("line").innerHTML=lineHTML + "<img src='images/baseline.png' style='padding-right:10px;' />";
-    
-  }   
+  alert(word)
 }
 
-var word = ["dog", 
+var words = ["dog", 
             "cat",
             "life", 
             "class", 
@@ -80,4 +67,42 @@ var word = ["dog",
             "china",
             "kimjungun",
             "confucius",
-            "donald trump"]
+            "donald trump"];
+
+function guess(Alphabet){
+  
+  //alert(Alphabet);
+  
+  var wordHtml = "";
+  
+  for(var i = 0; i < word.length; i++){
+    if(Alphabet == word.charAt(i)){
+          wordHtml = wordHtml +  "<img src='images/" + Alphabet + ".png' style='padding-right:10px;' />"   
+       }
+    else{ 
+      wordHtml = wordHtml +  "<img src='images/baseline.png' style='padding-right:10px;' />";
+    }
+ 
+  }
+  document.getElementById("line").innerHTML=wordHtml;
+}
+
+function getRandomNum(max, min){
+  return Math.floor((Math.random()*max)+min);
+}
+
+function pickWord(){
+  
+  var num = getRandomNum(words.length, 0);
+  
+  word = words[num];
+
+  for(var i = 0; i<word.length; i++){
+    
+    var lineHTML = document.getElementById("line").innerHTML;
+    
+    document.getElementById("line").innerHTML=lineHTML + "<img src='images/baseline.png' style='padding-right:10px;' />";
+    
+  }   
+}
+
