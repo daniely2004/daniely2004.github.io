@@ -2,16 +2,17 @@ var word = ""; //is the chosen word to guess
 var letters_guessed = []; //holds the guesses or letters the player makes
 var word_letters = []; //holds the html for each letter
 var guessed_correct = []; //holds 0 or 1 if letter is guessed correctly
-var hangman_pics= ["images/Hangman(1).png",
+var hangman_index = 1; //index of hangman pic if guess is wrong
+var hangman_pics = ["images/Hangman (1).png",
 									 "images/Hangman2.png",
-									 "images/Hangman(3).png",
-									 "images/Hangman(4).png",
-									 "images/hangman(5).png",
-									 "images/hangman(6).png",
-									 "images/hangman(7).png",];
+									 "images/Hangman (3).png",
+									 "images/Hangman (4).png",
+									 "images/Hangman (5).png",
+									 "images/Hangman (6).png",
+									 "images/Hangman (7).png",];
 
 function startGame(){
-  document.getElementById("line").innerHTML="";
+	document.getElementById("line").innerHTML="";
 	pickWord();
   
   //alert(word);
@@ -24,50 +25,59 @@ function guess(Alphabet){
   
   letters_guessed.push(Alphabet);
   
-	var inList = true;
-	
+  var inList = false;
+  
   var wordHtml = "";
-	
-	 for(var k = 0; j < letters_guessed.length; k++){
-		 	if(letters_guessed[k] == Alphbet){
-			
-			}
-	 }
   
   //goes through the guesses to either draw letter or draw blank
   for(var j = 0; j < letters_guessed.length; j++){
   
 	  for(var i = 0; i < word.length; i++){
 		  if(letters_guessed[j] == word.charAt(i)){
-		  	  
-			word_letters[i] = "<img src='images/" + letters_guessed[j] + ".png' style='padding-right:10px;' />";
-			guessed_correct[i] = 1;
-		  }
-		  else{
-		  	  
-		  	  if(guessed_correct[i] != 1){
-		  	  	 word_letters[i] =  "<img src='images/baseline.png' style='padding-right:10px;' />";  
-		  	  }
-		  }
-	  }
-	  
+
+					word_letters[i] = "<img src='images/" + letters_guessed[j] + ".png' style='padding-right:10px;' />";
+					guessed_correct[i] = 1;
+
+
+					if(letters_guessed[j] == Alphabet){
+						inList = true;	
+					}
+				}
+				else{
+
+						if(guessed_correct[i] != 1){
+							 word_letters[i] =  "<img src='images/baseline.png' style='padding-right:10px;' />";  
+						}
+				}
+			}   
   	}
- 
-		
+  	
   //makes the html of the guessed letters for the word
   for(var k = 0; k < word_letters.length; k++){
   	  wordHtml = wordHtml + word_letters[k];
   }
+  
   document.getElementById("line").innerHTML=wordHtml;
-	
-	if(inList === false){"images/Hangman(1).png",
+  
+  if(inList === false){
+  	  //put hangman pic list here
+                   ["images/Hangman (1).png",
 									 "images/Hangman2.png",
-									 "images/Hangman(3).png",
-									 "images/Hangman(4).png",
-									 "images/hangman(5).png",
-									 "images/hangman(6).png",
-									 "images/hangman(7).png"}
+									 "images/Hangman (3).png",
+									 "images/Hangman (4).png",
+									 "images/Hangman (5).png",
+									 "images/Hangman (6).png",
+									 "images/Hangman (7).png",];
+			var getHangman = hangman_pics[hangman_index++];
+			document.getElementById("hangmanPic").innerHTML="<img src='" 
+				+ getHangman + "' />";
+		
+		if(hangman_index == 7){
+			alert("You lose!");
+		}
   }
+  
+}
 
 function pickWord(){
   
@@ -118,7 +128,7 @@ var words = ["dog",
             "science",
             "antidisestablishmentarianism",
             "floccinaucinihilipilification",
-         		"bad",
+            "bad",
             "god",
             "oh",
             "ball",
@@ -126,7 +136,7 @@ var words = ["dog",
             "lunch",
             "shiiii",
             "quiet",
-            "hashtag",
+            "hasjtag",
             "volcano",
             "teacher",
             "touchscreen",
