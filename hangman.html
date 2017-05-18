@@ -1,0 +1,61 @@
+<html> 
+  <head>
+    <title>hangman</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <script src="hangman.js"></script>
+  </head>
+  <body onload="startGame();">
+    <div id= "container">
+	   <div id="navigation">
+		 <a href="index.html"> Home </a> |
+		 <a href="aboutme.html">About Me</a> |
+     <a href="projects.html">Projects</a>
+     </div> 
+	</body>
+				<div id= "game">
+        <div id= "player">
+					<div id="hangmanButtons">
+							<input type="button" value="New Game" onclick="startGame()">
+						<p>
+							<input type="button" id="a" value="a" onclick="guess('a')">
+							<input type="button" id="b" value="b" onclick="guess('b')">
+							<input type="button" id="c" value="c" onclick="guess('c')">
+							<input type="button" id="d" value="d" onclick="guess('d')">
+						  <input type="button" id="e" value="e" onclick="guess('e')">
+							<input type="button" id="f" value="f" onclick="guess('f')">
+							<input type="button" id="g" value="g" onclick="guess('g')">
+							<input type="button" id="h" value="h" onclick="guess('h')">
+							<input type="button" id="i" value="i" onclick="guess('i')">	
+							<input type="button" id="j" value="j" onclick="guess('j')">
+						  <input type="button" id="k" value="k" onclick="guess('k')">
+							<input type="button" id="l" value="l" onclick="guess('l')">
+							<input type="button" id="m" value="m" onclick="guess('m')">
+							<input type="button" id="n" value="n" onclick="guess('n')">
+						</p>
+						<p>
+							<input type="button" id="o" value="o" onclick="guess('o')">
+							<input type="button" id="p" value="p" onclick="guess('p')">
+							<input type="button" id="q" value="q" onclick="guess('q')">
+							<input type="button" id="r" value="r" onclick="guess('r')">
+							<input type="button" id="s" value="s" onclick="guess('s')">
+							<input type="button" id="t" value="t" onclick="guess('t')">
+							<input type="button" id="u" value="u" onclick="guess('u')">
+							<input type="button" id="v" value="v" onclick="guess('v')">
+							<input type="button" id="w" value="w" onclick="guess('w')">
+							<input type="button" id="x" value="x" onclick="guess('x')">
+							<input type="button" id="y" value="y" onclick="guess('y')">
+							<input type="button" id="z" value="z" onclick="guess('z')">
+						</p>
+						<div id="hangmanPic">
+							<img src="images/hangmanSlim.png" />
+						</div>
+						<div id="line">
+					
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+  </head>
+</html>
+ 
