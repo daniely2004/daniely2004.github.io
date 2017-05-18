@@ -3,7 +3,7 @@ var letters_guessed = []; //holds the guesses or letters the player makes
 var word_letters = []; //holds the html for each letter
 var guessed_correct = []; //holds 0 or 1 if letter is guessed correctly
 var hangman_pics= ["images/Hangman(1).png",
-									 "images/Hangman(2).png",
+									 "images/Hangman2.png",
 									 "images/Hangman(3).png",
 									 "images/Hangman(4).png",
 									 "images/hangman(5).png",
@@ -61,7 +61,7 @@ function guess(Alphabet){
   document.getElementById("line").innerHTML=wordHtml;
 	
 	if(inList === false){"images/Hangman(1).png",
-									 "images/Hangman(2).png",
+									 "images/Hangman2.png",
 									 "images/Hangman(3).png",
 									 "images/Hangman(4).png",
 									 "images/hangman(5).png",
