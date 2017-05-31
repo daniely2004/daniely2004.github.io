@@ -1,6 +1,11 @@
 #main_pic{
-	height:300px;
-	width:650px;
+	height:250px;
+	width:500px;
+	border-radius:25px;
+}
+
+#guitar{
+	border-radius:25px;
 }
 
 .box{
@@ -34,20 +39,39 @@
 	border-radius:25px;
 	background-color:red;
 	margin-bottom:25px;
-	
+	margin-top:25px;
 }
 
 body{
 	 background-image: url("https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_tahoe.jpeg");
 	text-align:center;
+	height:1200px;
 }
 
 #container{
-	background-color:orange;
-	margin:0px;
+	background-color:skyblue;
+	margin-left:auto;
+	margin-right:auto;
 	border-radius:25px;
 	padding:10px;
-	height:800px;
+	width:90%;
+	height:100%;
+	
+}
+
+#greeting{
+	float:left;
+	width:50%;
+	height:100%;
+	font-family:sans-serif;
+	font-style:italic;
+}
+
+#greeting2{
+	float:right;
+	width:50%;
+	height:100%;
+	
 }
 
 #content{
@@ -55,7 +79,11 @@ body{
 }
 
 #gallery img{
-	height:250px;
+	margin-top:30px;
+	margin-bottom:30px;
+	border-radius:25px;
+	height:360px;
+	width:800px;
 }
 
 #line{
@@ -76,4 +104,17 @@ body{
    font-size:100%;
    cursor:pointer;
 	 background-color:green;
+}
+
+#ul{
+	list-style-type:none;
+}
+
+#left{
+	margin-top:25px;
+	margin-left:auto;
+}
+
+#right{
+	margin-right:left
 }
