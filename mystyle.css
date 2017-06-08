@@ -32,7 +32,7 @@
 #game{
 	border-style:solid;
 	width:600px;
-	height:600px;
+	height:400px;
 	padding:50px;
 	margin-left:auto;
 	margin-right:auto;
@@ -59,16 +59,71 @@ body{
 	
 }
 
+#container1{
+	background-color:skyblue;
+	height: 350px;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:25px;
+	
+}
+
+#container2{
+	background-color:skyblue;
+	height: 650px;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:25px;
+}
+
+#container3{
+	background-color:skyblue;
+	height: 500px;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:25px;
+	width:95%;
+}
+#container4{
+	background-color:skyblue;
+	height: 550px;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:25px;
+	width:95%;
+}
+
+#container5{
+	background-color:skyblue;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:25px;
+	padding:10px;
+	width:90%;
+	height:700px;
+}
+
+#container6{
+	background-color:skyblue;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:25px;
+	padding:10px;
+	width:90%;
+	height:650px;
+}
+	
 #greeting{
 	float:left;
-	width:50%;
+	width:%;
 	height:100%;
 	font-family:sans-serif;
 	font-style:italic;
 }
 
 #greeting2{
-	float:right;
+	margin-top:100px;
+	float:left;
 	width:50%;
 	height:100%;
 	
@@ -117,4 +172,12 @@ body{
 
 #right{
 	margin-right:left
+}
+
+#hello{
+	margin-top:100px;
+}
+
+#hangmanButtons{
+	border-radius:25px;
 }
