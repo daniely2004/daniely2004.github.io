@@ -28,6 +28,7 @@ function guess(Alphabet){
   var inList = false;
   
   var wordHtml = "";
+	var winner = true;
   
   //goes through the guesses to either draw letter or draw blank
   for(var j = 0; j < letters_guessed.length; j++){
@@ -46,6 +47,7 @@ function guess(Alphabet){
 				else{
 
 						if(guessed_correct[i] != 1){
+							winner = false;
 							 word_letters[i] =  "<img src='images/baseline.png' style='padding-right:10px;' />";  
 						}
 				}
@@ -76,6 +78,10 @@ function guess(Alphabet){
 			alert("You lose!");
 		}
   }
+	
+		if(winner){
+		setTimeout(function(){alert("You win!");}, 1000);
+	}
   
 }
 
@@ -109,9 +115,7 @@ var words = ["dog",
             "class", 
             "code",
             "school",
-            "computer", 
-            "supercalifragilisticexpialidocious",
-            "pneumonoultramicroscopicsilicovolcanoconiosis",
+            "computer",
             "basketball",
             "curry",
             "python",

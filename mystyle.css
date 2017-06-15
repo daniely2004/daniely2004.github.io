@@ -2,6 +2,8 @@
 	height:250px;
 	width:500px;
 	border-radius:25px;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 #guitar{
@@ -32,7 +34,7 @@
 #game{
 	border-style:solid;
 	width:600px;
-	height:400px;
+	height:500px;
 	padding:50px;
 	margin-left:auto;
 	margin-right:auto;
@@ -110,7 +112,7 @@ body{
 	border-radius:25px;
 	padding:10px;
 	width:90%;
-	height:650px;
+	height:800px;
 }
 	
 #greeting{
@@ -119,6 +121,7 @@ body{
 	height:100%;
 	font-family:sans-serif;
 	font-style:italic;
+	margin-left:15px;
 }
 
 #greeting2{
@@ -126,7 +129,7 @@ body{
 	float:left;
 	width:50%;
 	height:100%;
-	
+	margin-left:15px;
 }
 
 #content{
